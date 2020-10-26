@@ -124,6 +124,12 @@ img {
   list-style-type: none;
 }
 
+.phones--column {
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+}
+
 .phones::before {
   width: 13px;
   height: 13px;
@@ -132,6 +138,12 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   content: "";
+}
+
+.phones--column::before {
+  position: absolute;
+  left: -25px;
+  top: 2px;
 }
 
 .phones__item {
@@ -154,6 +166,18 @@ img {
   border-radius: 50%;
   background-color: var(--orange);
   content: "";
+}
+
+.phones--column .phones__item {
+  margin-left: 0;
+}
+
+.phones--column .phones__item::before {
+  display: none;
+}
+
+.phones--column .phones__item + .phones__item {
+  margin-top: 4px;
 }
 
 .phones__link {
