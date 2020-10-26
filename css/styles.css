@@ -101,6 +101,7 @@ img {
   display: flex;
   align-items: center;
   font-style: normal;
+  margin-left: 20px;
 }
 
 .site-header__address::before {
@@ -217,6 +218,88 @@ img {
 
 .work-hours__item + .work-hours__item {
   margin-left: 17px;
+}
+
+
+/* Site-header bottom */
+
+.site-header__bottom {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #fff;
+  white-space: nowrap;
+}
+
+.site-header__bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* LOGO */
+
+.logo {
+  position: relative;
+  z-index: 1;
+  width: 178px;
+  flex-shrink: 0;
+}
+
+.logo__link {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo__img {
+  display: block;
+}
+
+
+/* SITENAV */
+
+.sitenav {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.sitenav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.sitenav__item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 27px;
+  margin-right: 27px;
+}
+
+.sitenav__item--active {
+  display: flex;
+  align-items: center;
+}
+
+.sitenav__item--active::before {
+  width: 14px;
+  height: 14px;
+  margin-right: 12px;
+  background-color: #000;
+  content: "";
+}
+
+.sitenav__link {
+  display: block;
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 
